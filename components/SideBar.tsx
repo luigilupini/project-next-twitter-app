@@ -14,10 +14,11 @@ import {
 
 function SideBarRow({ Icon, title }) {
   return (
-    <div className="flex items-center px-4 py-3 space-x-2 transition-all duration-150 rounded-full cursor-pointer max-w-fit hover:bg-gray-800 group">
+    <div
+      className="flex items-center px-4 py-3 space-x-2 transition-all duration-150 rounded-full cursor-pointer max-w-fit hover:bg-slate-100 group" /* hover:bg-gray-800 */
+    >
       <Icon className="w-6 h-6" />
-      <p>{title}</p>
-      {/* <p className="group-hover:text-twitter">{title}</p> */}
+      <p className="group-hover:text-twitter">{title}</p>
     </div>
   );
 }
