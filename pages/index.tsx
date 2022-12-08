@@ -2,6 +2,7 @@ import { NextPage } from "next";
 import Head from "next/head";
 import Feed from "../components/Feed";
 import SideBar from "../components/SideBar";
+import Widgets from "../components/Widgets";
 
 // `NextPage` is a page type used to guide the creation of pages.
 const Home: NextPage = () => {
@@ -14,7 +15,7 @@ const Home: NextPage = () => {
       {/* Header */}
       <SideBar />
       <Feed />
-      {/* Widgets */}
+      <Widgets />
     </div>
   );
 };
