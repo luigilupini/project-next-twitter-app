@@ -15,10 +15,10 @@ import {
 function Row({ Icon, title }) {
   return (
     <div
-      className="flex items-center px-4 py-3 space-x-2 transition-all duration-150 rounded-full cursor-pointer max-w-fit hover:bg-slate-100 group" /* hover:bg-gray-800 */
+      className="flex items-center px-4 py-4 space-x-2 transition-all duration-150 rounded-full cursor-pointer max-w-fit hover:bg-slate-100 group" /* hover:bg-gray-800 */
     >
       <Icon className="w-6 h-6" />
-      <p className="hidden text-sm md:inline-flex group-hover:text-twitter lg:text-base">
+      <p className="hidden text-sm font-semibold md:inline-flex group-hover:text-twitter lg:text-base">
         {title}
       </p>
     </div>
