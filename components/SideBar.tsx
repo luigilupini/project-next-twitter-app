@@ -17,7 +17,7 @@ function Row({ Icon, title }) {
     <div
       className="flex items-center px-4 py-4 space-x-2 transition-all duration-150 rounded-full cursor-pointer max-w-fit hover:bg-slate-100 group" /* hover:bg-gray-800 */
     >
-      <Icon className="w-6 h-6" />
+      <Icon className="w-7 h-7" />
       <p className="hidden text-sm font-semibold md:inline-flex group-hover:text-twitter lg:text-base">
         {title}
       </p>
