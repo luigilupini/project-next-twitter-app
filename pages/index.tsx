@@ -12,7 +12,7 @@ interface Props {
 
 // `NextPage` is a page type used to guide the creation of pages.
 const Home = ({ tweets }: Props) => {
-  console.log(tweets);
+  // console.log(tweets);
   return (
     // <div className="bg-[#15202B] text-[#F8F9F9]">
     <div className="max-h-screen mx-auto overflow-hidden lg:max-w-7xl text-[#0F1419]">

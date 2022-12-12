@@ -12,5 +12,5 @@ const feedQuery = groq`
 
 export default async function handler(req, res) {
   const tweets = await client.fetch(feedQuery);
-  res.status(200).json({ tweets });
+  res.status(200).json({ tweets }); // return tweets object in response
 }
