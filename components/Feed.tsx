@@ -10,6 +10,7 @@ import { toast } from "react-hot-toast";
 
 function Feed({ tweets: serverProps }) {
   const [tweets, setTweets] = useState(serverProps);
+  console.log("SSR: ", serverProps);
   // console.log(tweets); // Here we also client-side render
   const handleRefresh = async () => {
     const refreshToast = toast.loading("Refreshing...");
