@@ -11,7 +11,7 @@ import {
 function TweetBox() {
   const [input, setInput] = useState("");
   return (
-    <div className="flex p-5 space-x-2">
+    <div className="flex p-5 space-x-2 border-b border-gray-200">
       <Image
         className="object-cover mt-5 rounded-full h-14 w-14"
         src="/plain-avatar.jpeg"

@@ -1,5 +1,6 @@
 import { GetServerSideProps } from "next";
 import Head from "next/head";
+import { Toaster } from "react-hot-toast";
 import Feed from "../components/Feed";
 import SideBar from "../components/SideBar";
 import Widgets from "../components/Widgets";
@@ -15,11 +16,11 @@ const Home = ({ tweets }: Props) => {
   // console.log(tweets);
   return (
     // <div className="bg-[#15202B] text-[#F8F9F9]">
-    <div className="max-h-screen mx-auto overflow-hidden lg:max-w-7xl text-[#0F1419]">
+    <div className="max-h-screen mx-auto lg:max-w-7xl text-[#0F1419]">
       <Head>
         <title>Home | Twitter</title>
       </Head>
-
+      <Toaster />
       <main className="grid grid-cols-9">
         <SideBar />
         <Feed tweets={tweets} />

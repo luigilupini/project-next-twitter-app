@@ -24,7 +24,7 @@ function Tweet({ tweet }) {
   }, []);
 
   return (
-    <div className="flex flex-col p-5 space-x-3 border-gray-200 border-y hover:bg-slate-50">
+    <div className="flex flex-col p-5 space-x-3 border-b border-gray-200 hover:bg-slate-50">
       {/* top */}
       <div className="flex space-x-3">
         <img
