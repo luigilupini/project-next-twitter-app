@@ -21,7 +21,7 @@ function Feed({ tweets: serverProps }) {
     });
   };
   return (
-    <div className="max-h-screen col-span-7 overflow-scroll border-x lg:col-span-5 scrollbar-hide">
+    <div className="max-h-screen col-span-6 mt-2 overflow-scroll border-x lg:col-span-4 scrollbar-hide">
       {/* Header */}
       <div className="flex items-center justify-between">
         <h1 className="p-5 pb-0 text-xl font-bold">Home</h1>

@@ -87,7 +87,7 @@ function Tweet({ tweet }) {
             <img
               src={tweet.image}
               alt="tweetImg"
-              className="object-cover my-4 mb-1 ml-0 shadow-sm rounded-2xl max-h-72"
+              className="object-cover w-full my-4 mb-1 ml-0 shadow-sm rounded-2xl"
             />
           )}
         </div>

@@ -30,7 +30,7 @@ function Row({ Icon, title, onClick }) {
 function SideBar() {
   const { data: session } = useSession();
   return (
-    <div className="flex flex-col items-center col-span-2 px-4 md:items-start">
+    <div className="flex flex-col items-center col-span-2 px-4 mt-1 md:items-start">
       <Image
         src={"/logo.png"}
         width={200}

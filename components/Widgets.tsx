@@ -4,7 +4,7 @@ import { TwitterTimelineEmbed } from "react-twitter-embed";
 React Twitter Embed Component is a simple way to add Twitter Widgets. */
 function Widgets() {
   return (
-    <div className="hidden col-span-2 px-2 mt-5 lg:inline">
+    <div className="hidden col-span-3 px-3 mt-5 lg:inline">
       {/* Search Container*/}
       <div className="flex items-center p-3 mb-4 space-x-2 bg-gray-100 rounded-full">
         <MagnifyingGlassIcon className="w-5 h-5 text-gray-500" />
