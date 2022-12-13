@@ -25,9 +25,7 @@ export default defineType({
       title: 'Tweet',
       description: 'Reference the tweet the comment is associated with:',
       type: 'reference',
-      to: {
-        type: 'tweet',
-      },
+      to: {type: 'tweet'},
     },
   ],
 })

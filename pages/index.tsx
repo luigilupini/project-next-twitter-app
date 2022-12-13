@@ -16,11 +16,17 @@ const Home = ({ tweets }: Props) => {
   // console.log(tweets);
   return (
     // <div className="bg-[#15202B] text-[#F8F9F9]">
-    <div className="max-h-screen mx-auto lg:max-w-7xl text-[#0F1419]">
+    <div className="max-h-screen mx-auto lg:max-w-7xl text-[#0F1419] overflow-hidden">
       <Head>
         <title>Home | Twitter</title>
       </Head>
-      <Toaster />
+      <Toaster
+        toastOptions={{
+          style: {
+            fontSize: "14px",
+          },
+        }}
+      />
       <main className="grid grid-cols-9">
         <SideBar />
         <Feed tweets={tweets} />

@@ -10,7 +10,7 @@ import { toast } from "react-hot-toast";
 
 function Feed({ tweets: serverProps }) {
   const [tweets, setTweets] = useState(serverProps);
-  console.log("SSR: ", serverProps);
+  // console.log("SSR: ", serverProps);
   // console.log(tweets); // Here we also client-side render
   const handleRefresh = async () => {
     const refreshToast = toast.loading("Refreshing...");
@@ -21,7 +21,7 @@ function Feed({ tweets: serverProps }) {
     });
   };
   return (
-    <div className="col-span-7 border-x lg:col-span-5">
+    <div className="max-h-screen col-span-7 overflow-scroll border-x lg:col-span-5 scrollbar-hide">
       {/* Header */}
       <div className="flex items-center justify-between">
         <h1 className="p-5 pb-0 text-xl font-bold">Home</h1>
@@ -32,7 +32,7 @@ function Feed({ tweets: serverProps }) {
       </div>
       {/* Middle (Input) */}
       <div>
-        <TweetBox />
+        <TweetBox setTweets={setTweets} />
       </div>
       {/* Bottom (All Tweets) */}
       <div>

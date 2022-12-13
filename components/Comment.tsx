@@ -5,7 +5,7 @@ import TimeAgo from "react-timeago";
 function Comment({ comment }) {
   return (
     <div key={comment._id} className="relative flex space-x-2">
-      <hr className="absolute h-8 border-gray-200 left-[21px] top-10 border-x" />
+      <hr className="absolute h-6 border-gray-200 left-[21px] top-10 border-x" />
       <img
         src={comment.profileImg}
         alt="profile"
